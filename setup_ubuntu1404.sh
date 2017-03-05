@@ -89,7 +89,7 @@ git clone https://github.com/NextThingCo/CHIP-tools.git
 
 echo -e "\n Installing CHIP-buildroot"
 if [ ! -d CHIP-buildroot ]; then
-  git clone http://github.com/NextThingCo/CHIP-buildroot
+  git clone --branch "missing-link" http://github.com/CircuitHappy/CHIP-buildroot
 else
   pushd CHIP-buildroot
   git pull
