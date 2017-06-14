@@ -126,5 +126,7 @@ Vagrant.configure(2) do |config|
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", path:"./setup_ubuntu1404.sh"
-  #end
+  
+  # Add synced folder
+  config.vm.synced_folder ".", "/vagrant/"
 end
